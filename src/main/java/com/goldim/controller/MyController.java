@@ -13,4 +13,10 @@ public class MyController {
         ModelAndView page = new ModelAndView("vklogin");
         return page;
     }
+
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public ModelAndView indexView(){
+        ModelAndView page = new ModelAndView("index");
+        return page;
+    }
 }
